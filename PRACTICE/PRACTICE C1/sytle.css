@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+nav{
+    display: ;
+    background-color: black;
+    color: rgb(8, 238, 226);
+    width: 100vw;
+    height: 100vh;
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 90%,0% 100%);
+}
+.navbar{
+    display: flex;
+    padding: 1rem;
+}
+.left{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    width: 70%;
+}
+.navbar h2{
+    margin-left: 0rem;
+    font-size: 1.2rem ;
+
+}
+.middle a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:white;
+    padding: .5rem;
+}
+.middle a:hover{
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    padding: 0.1rem 0.4rem;
+    background-color: blanchedalmond;
+    transition: 0.3s ease;
+}
+.middle{
+    margin-left: 2rem;
+}
+.navbutton button{
+    background-color: aqua;
+    color: rgb(255, 255, 255);
+    padding: 2px 7px;
+    font-size:1rem;
+    margin-left: 8rem;
+    font-weight: bold;
+    
+}
+.navbutton button:hover {
+    background-color: white;
+    color: aqua;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.bottomnav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.bottomnav img{
+    margin-left: 10rem;
+    width: 400px;
+    opacity: 50%;
+    padding-top: 2.9rem;
+}
+.bottomnav .righttext h1{
+color: white;
+font-size: 2rem;
+padding-bottom: .8rem;
+line-height: 2.3rem;
+}
+.bottomnav .righttext span{
+    color: aqua;
+}
+.bottomnav .righttext p,h3{
+    color: white;
+}
+.bottomnav .righttext p{
+    font-size: .8rem;
+}
+
+.btnbtm button{
+    background-color: white;
+    border: 1px solid aqua;
+    color: aqua;
+    font-weight: bold;
+    padding: 2px 7px;
+    margin-top: 1.5rem;
+    font-size:1rem;
+
+}
+.btnbtm button:hover{
+    background-color: aqua;
+    color: white;
+    transition: .2s ease-in;
+    
+}
