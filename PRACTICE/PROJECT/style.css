@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(6, 190, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    background-color: rgb(214, 214, 214);
+    width: 85vw;
+    height: 85vh;
+    overflow: hidden;
+    display:grid;
+    border-radius:20px;
+    grid-template-columns: .2fr 1fr;
+    grid-template-rows: 1fr .5fr 44px 1fr; 
+    grid-template-areas:
+    "menu menu"
+    "sidebar images"
+    "sidebar heading"
+    "sidebar content"
+}
+.nav{
+    align-items: center;
+    grid-area: menu;
+    display: grid;
+    padding: 2vw;
+    grid-template-columns: 1fr 1fr .7fr .1fr;
+    grid-template-areas: 
+    "logo search icons profile";
+    background-color: white;
+    border-bottom: 1px solid rgb(180, 180, 180);
+
+
+}
+.logo{  
+    grid-area:logo;
+    width: 40px;
+}
+
+.search{
+    grid-area: search;
+    width: auto;
+    height: 5vh;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 25px;
+    background-color:rgb(253, 253, 253);
+    margin-right: 40px;
+}
+
+.icons1{
+    grid-area: icons;
+    /* gap: 1rem; */
+    padding-left:0%;
+    
+}
+.icons2{
+    grid-area: icons;
+    padding-left: 30%;
+    
+}
+.icons3{
+    grid-area: icons;
+    padding-left: 60%;
+    transform: scale(1.1 ease);
+}
+.seven{
+    grid-area: icons;
+    width: 20px;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    background-color: rgb(221, 31, 31);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    align-items: center;
+    padding: 4px 7px;
+    position: absolute;
+    right: 18%;
+    top:12%
+}
+.twentyfour{
+    grid-area: icons;
+    width: 20px;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    background-color: rgb(221, 31, 31);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    align-items: center;
+    padding: 4px 5px;
+    position: absolute;
+    right: 24%;
+    top:12%
+}
+
+.profile{
+    grid-area: profile;
+    width: 35px;
+    border-radius: 100%;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    padding-top: 10px;
+    background-color: black;
+    width: 16vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar a:hover{
+    background-color:rgb(255, 255, 255); 
+    color: black;
+}
+
+.sidebar a{
+    height:20px;
+    padding-top: 3px;
+    text-decoration: none;
+    text-align:center;
+    font-size: 15px;
+    font-weight:200;
+    color: white;
+    margin: 5px 1px;
+    letter-spacing: 2px;
+}
+.sidebar .footer{
+    grid-area: sidebar;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 290px;
+
+}
+.imgs img{
+    grid-area: images;
+    margin-left:auto;
+    width: 311px;
+}
+.imgs img:hover{
+    transform: scale(1.2) ;
+}
+.headlines{
+    grid-area: heading;
+    display: grid;
+    grid-template-columns: 1fr 150px 110px 1px;
+    grid-template-areas: "headline address votes";
+
+}
+.hotel-heading{
+grid-area: headline;
+height: 44px;
+background-color: rgb(255, 255, 255);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+color: rgb(175, 175, 175);
+padding: 10px 20px;
+}
+.address{
+    grid-area: address;
+    height: 7vh;
+    background: white;
+    color: rgb(6, 190, 223);
+padding-top: 15px;
+}
+.votes{
+    grid-area: votes;
+    display: flex;
+    align-items: center;
+    flex-direction: column;;
+    height: 7vh;
+    grid-area: votes;
+    background-color: rgb(6, 190, 223);
+    color: white;
+
+}
+.vnum{
+    padding-top: 3px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.vname{
+    font-size: 8px;
+}
+.secstart p
+{
+    grid-area: content;
+    background-color: white;
+    width: 200px;
+    height: 180px;
+    margin: 15px 15px;
+    padding: 10px;
+    display: inline-block;
+    content: open-quote;
+    border-radius: 10px;
+    
+}
+.secstart :hover {
+    transform: scale(1.07);
+    background-color: black;
+    color: white;
+}
